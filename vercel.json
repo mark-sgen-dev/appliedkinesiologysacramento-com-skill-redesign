@@ -1,0 +1,52 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json#site-reforge-redirect-map",
+  "redirects": [
+    {
+      "source": "/FX-635-laser-therapy",
+      "destination": "/FX-635-laser-therapy/",
+      "statusCode": 301
+    },
+    {
+      "source": "/applied-kinesiology",
+      "destination": "/applied-kinesiology/",
+      "statusCode": 301
+    },
+    {
+      "source": "/cold-laser-therapy",
+      "destination": "/cold-laser-therapy/",
+      "statusCode": 301
+    },
+    {
+      "source": "/conditions",
+      "destination": "/conditions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pulsed-electromagnetic-field-therapy",
+      "destination": "/pulsed-electromagnetic-field-therapy/",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/first-visit/payment-options.php",
+      "destination": "/first-visit/payment-options.php.html"
+    }
+  ]
+}

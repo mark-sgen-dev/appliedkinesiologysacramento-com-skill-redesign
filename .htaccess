@@ -1,0 +1,12 @@
+# site-reforge redirect map (Apache). Each source redirect matched exactly: mod_alias Redirect is a prefix match.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # /contact serves contact.html, unless a real file or directory answers it.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+)$ $1.html [L]
+</IfModule>
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>

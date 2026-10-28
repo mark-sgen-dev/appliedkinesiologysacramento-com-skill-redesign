@@ -1,0 +1,146 @@
+:root {
+  
+  --c-1: #0cb3fa;
+  --c-2: #323232;
+  --c-3: #ffffff;
+  --c-4: #cccccc;
+  --c-5: #ad112b;
+  --c-6: #7e7d82;
+  --c-7: #333333;
+  --c-8: #000000;
+
+  
+  --font-body: Muli, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --fs-1: 10px;
+  --fs-2: 12px;
+  --fs-3: 14px;
+  --fs-4: 16px;
+  --fs-5: 17px;
+  --fs-6: 17.6px;
+  --fs-7: 18px;
+  --fs-8: 20px;
+  --fs-9: 22.4px;
+  --fs-10: 24px;
+  --fs-11: 26px;
+  --fs-12: 30px;
+  --fs-13: 36px;
+  --fs-14: 40px;
+  --fs-15: 60px;
+
+  
+  --sp-1: 5px;
+  --sp-2: 8px;
+  --sp-3: 10px;
+  --sp-4: 12px;
+  --sp-5: 12.5px;
+  --sp-6: 14px;
+  --sp-7: 15px;
+  --sp-8: 16px;
+  --sp-9: 18px;
+  --sp-10: 20px;
+  --sp-11: 24px;
+  --sp-12: 25px;
+  --sp-13: 30px;
+  --sp-14: 35px;
+  --sp-15: 40px;
+  --sp-16: 50px;
+  --sp-17: 65px;
+  --sp-18: 75px;
+  --sp-19: 87.0938px;
+  --sp-20: 100px;
+  --sp-21: 115.688px;
+  --sp-22: 120px;
+  --sp-23: 152.094px;
+
+  
+  --radius-1: 50%;
+  --radius-2: 25px;
+  --radius-3: 2.5px;
+  --radius-4: 30px;
+  --shadow-1: rgba(0, 0, 0, 0.22) 0px 4px 14px 0px;
+  --shadow-2: rgb(73, 73, 73) 0px 0px 30px -5px;
+
+  
+  --container: 100%;
+  --bp-1: 350px;
+  --bp-2: 400px;
+  --bp-3: 479px;
+  --bp-4: 500px;
+  --bp-5: 575px;
+  --bp-6: 576px;
+  --bp-7: 600px;
+  --bp-8: 767px;
+  --bp-9: 768px;
+  --bp-10: 991px;
+  --bp-11: 992px;
+  --bp-12: 1199px;
+  --bp-13: 1200px;
+  --bp-14: 1300px;
+  --bp-15: 1400px;
+  --bp-16: 1450px;
+  --bp-17: 1500px;
+  --bp-18: 1590px;
+  --bp-19: 1599px;
+  --bp-20: 1600px;
+  --bp-21: 1800px;
+}
+
+:root {
+  
+  --ak-accent: var(--c-5);
+  --ak-accent-ink: color-mix(in srgb, var(--c-5) 78%, var(--c-8));
+  --ak-ink: #1a1a1a;
+  --ak-ink-2: #262626;
+  --ak-paper: #f6f5f3;
+  --ak-paper-2: #ece7dc;
+  --ak-surface: var(--c-3);
+  --ak-body: #4a4a4a;
+  --ak-muted: #626262;
+  --ak-line: color-mix(in srgb, var(--ak-ink) 18%, transparent);
+  --ak-line-soft: color-mix(in srgb, var(--ak-ink) 9%, transparent);
+  --ak-line-on-ink: color-mix(in srgb, var(--c-3) 14%, transparent);
+  --ak-tint: color-mix(in srgb, var(--ak-accent) 8%, transparent);
+  --ak-on-accent: var(--c-3);
+  --ak-on-ink: var(--c-3);
+  --ak-on-ink-soft: color-mix(in srgb, var(--c-3) 76%, var(--ak-ink));
+  --ak-glass: color-mix(in srgb, var(--ak-surface) 82%, transparent);
+  --ak-scrim: linear-gradient(100deg,
+    color-mix(in srgb, var(--ak-ink) 86%, transparent) 0%,
+    color-mix(in srgb, var(--ak-ink) 62%, transparent) 52%,
+    color-mix(in srgb, var(--ak-ink) 28%, transparent) 100%);
+
+  
+  --ak-font-disp: var(--font-display);
+  --ak-font-body: var(--font-body);
+  --ak-step--1: var(--fs-3);
+  --ak-step-0: var(--fs-4);
+  --ak-step-1: clamp(var(--fs-7), 1rem + .4vw, var(--fs-8));
+  --ak-step-2: clamp(var(--fs-10), 1.2rem + .8vw, var(--fs-11));
+  --ak-step-3: clamp(var(--fs-11), 1.4rem + 1vw, var(--fs-12));
+  --ak-step-4: clamp(var(--fs-12), 1.6rem + 1.6vw, var(--fs-13));
+  --ak-step-5: clamp(var(--fs-13), 1.8rem + 2vw, var(--fs-14));
+  --ak-step-6: clamp(var(--fs-14), 2rem + 3.4vw, var(--fs-15));
+
+  
+  --ak-r-chip: var(--radius-3);
+  --ak-r-card: 16px;
+  --ak-r-panel: var(--radius-2);
+  --ak-r-pill: 9999px;
+  --ak-shadow-rest: 0 2px 5px 0 color-mix(in srgb, var(--c-8) 8%, transparent);
+  --ak-shadow-card: 0 15px 30px 0 color-mix(in srgb, var(--ak-ink) 13%, transparent);
+  --ak-shadow-hover: 0 32px 64px -12px color-mix(in srgb, var(--ak-ink) 18%, transparent);
+
+  
+  --ak-delay: 0ms;              
+  --ak-ease: cubic-bezier(.05, .5, .3, 1);
+  --ak-t-fast: .2s ease-out;
+  --ak-t-reveal: .6s var(--ak-ease);
+
+  
+  --ak-wrap: 1180px;
+  --ak-gut: clamp(var(--sp-9), 4vw, var(--sp-18));
+  --ak-band-y: clamp(var(--sp-16), 7vw, var(--sp-20));
+  --ak-hero-y: clamp(var(--sp-18), 11vw, var(--sp-21));
+  --ak-pagehead-y: clamp(var(--sp-15), 5vw, var(--sp-17));
+}
